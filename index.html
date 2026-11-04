@@ -7,14 +7,66 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>About Us</title>
+        <meta name="description" content="Learn more about us.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                min-height: 100vh;
+                margin: 0;
+                display: grid;
+                place-items: center;
+                padding: 24px;
+                background: #f1f5f9;
+                color: #1e293b;
+                font-family: Arial, sans-serif;
+            }
+
+            .about-box {
+                width: min(100%, 560px);
+                padding: 36px;
+                border: 1px solid #e2e8f0;
+                border-radius: 16px;
+                background: #fff;
+                box-shadow: 0 12px 32px rgb(15 23 42 / 10%);
+            }
+
+            .about-box h1 {
+                margin: 0 0 16px;
+                color: #2563eb;
+                font-size: 2rem;
+            }
+
+            .about-box p {
+                margin: 0;
+                color: #475569;
+                font-size: 1rem;
+                line-height: 1.7;
+            }
+
+            @media (max-width: 480px) {
+                .about-box {
+                    padding: 28px 24px;
+                }
+            }
+        </style>
     </head>
     <body>
 
-        <h1>Hello World</h1>
+        <main>
+            <section class="about-box" aria-labelledby="about-title">
+                <h1 id="about-title">About Us</h1>
+                <p>
+                    We are a team dedicated to creating useful, thoughtful
+                    experiences. Our goal is to make everyday tasks simpler
+                    through ideas, collaboration, and great work.
+                </p>
+            </section>
+        </main>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
